@@ -1,0 +1,141 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/010/227/718/small_2x/sunrise-blur-background-photo.jpg') no-repeat center center fixed;
+  background-size: cover;    
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 450px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.weather-panel h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.city-input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #0d0808;
+  border-radius: 5px;
+}
+
+.fetch-button {
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.loading-message {
+  color: #333;
+  margin-top: 20px;
+}
+
+.weather-details {
+  margin-top: 10px;
+}
+
+.weather-details h2 {
+  margin: 0;
+  color: #333;
+}
+
+.temperature {
+  font-size: 2em;
+  color: #ff5733;
+  margin: 10px 0;
+}
+
+.humidity {
+  font-size: 1.2em;
+  color: #3498db;
+}
+
+.error-message {
+  color: red;
+  margin-top: 20px;
+}
+
+.forecast-details {
+  margin-top: 20px;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding-right: 5px;
+}
+
+.forecast-day {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.forecast-day p {
+  margin: 5px 0;
+}
+
+.forecast-day:hover {
+  transform: translateY(-5px);
+}
+
+body {
+  animation: backgroundAnimation 30s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
